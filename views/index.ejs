@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriber API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%; /* You can adjust this value */
+            max-width: 600px; /* Maximum width */
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Subscriber API</h1>
+        
+        <!-- Commented out Subscribers List
+        <h2>Subscribers List:</h2>
+        <ul>
+            <% subscribers.forEach(subscriber => { %>
+                <li>
+                    <strong>Name:</strong> <%= subscriber.name %>, 
+                    <strong>Subscribed Channel:</strong> <%= subscriber.subscribedChannel %>, 
+                    <strong>ID:</strong> <%= subscriber._id %>
+                </li>
+            <% }) %>
+        </ul>
+        -->
+
+        <h2>API Endpoints:</h2>
+        <ul>
+            <li><strong>GET</strong> <a href="/api/subscribers">/api/subscribers</a> - List of all subscribers</li>
+            <li><strong>GET</strong> <a href="/api/subscribers/names">/api/subscribers/names</a> - List of subscriber names and channels</li>
+            <li><strong>GET</strong> <a href="/api/subscribers/:id">/api/subscribers/:id</a> - Get subscriber by ID</li>
+        </ul>
+    </div>
+</body>
+</html>
